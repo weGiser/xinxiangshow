@@ -1,0 +1,15 @@
+.nav_top {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: 0;
+	border-right-style: 0;
+	border-bottom-style: 0;
+	border-left-style: 0;
+	background-image: url(images/top.png);
+}

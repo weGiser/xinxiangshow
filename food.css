@@ -1,0 +1,79 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.out{
+	text-align: center;
+	/* border: 1px red solid; */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.out>ul{
+	position: relative;
+	/* border: 1px red solid; */
+	margin: 0px auto;
+	width: 960px;
+	height: 709px;
+	transform: scale(0.6);
+}
+.out>ul>li{
+	position: absolute;
+	opacity: 0;
+	transition: all,1s;
+}
+.out>ul>li:hover{
+	cursor: pointer;
+}
+.out>ul>li>img{
+	width: 100%;
+	height: 100%;
+}
+.out>.anNiu{
+	position: absolute;
+	border: 1px red solid;
+	top: 280px;
+	width: 50px;
+	line-height: 100px;
+}
+.out>.anNiu:hover{
+	cursor: pointer;
+}
+
+#anNiu1{
+	left: 170px;
+}
+#anNiu2{
+	right: 170px;
+}
+.out>ol{
+	position: absolute;
+	top: 600px;
+	left: 44%;
+}
+.out>ol>li{
+	background-color: ghostwhite;
+	width: 10px ;
+	height: 10px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+.out>ol::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+.wenzi {
+	font-family: "»ªÎÄ¿¬Ìå";
+	font-size: large;
+	font-weight: normal;
+	text-indent: 2em;
+	color: #000000;
+}
