@@ -2,17 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>��ɫ����</title>
+<title>特色景点</title>
 <style type="text/css">
 <!--
 .STYLE1 {
 	font-size: xx-large;
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-style: normal;
 	font-weight: bold;
 }
 body,td,th {
-	font-family: �����п�;
+	font-family: 华文行楷;
 	font-size: xx-large;
 	color: #FE5E00;
 	font-weight: bold;
@@ -92,7 +92,7 @@ a:active {
 	visibility: visible;
 	background-image: url(images/xia1.gif);
 }
-.STYLE6 {font-size: xx-large; font-family: "�����п�"; font-style: normal; font-weight: bold; color: #FE5E00; }
+.STYLE6 {font-size: xx-large; font-family: "华文行楷"; font-style: normal; font-weight: bold; color: #FE5E00; }
 a {
 	font-size: xx-large;
 	color: #FE5E00;
@@ -120,7 +120,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    /* �������� */
+    /* 允许换行 */
     flex-wrap: wrap;
 }
 .card{
@@ -132,13 +132,13 @@ a {
     align-items: flex-end;
     text-align: center;
     color: #f5f5f5;
-    /* ��Ӱ */
+    /* 阴影 */
     box-shadow: 0 1px 1px rgba(0,0,0,0.1),
     0 2px 2px rgba(0,0,0,0.1),
     0 4px 4px rgba(0,0,0,0.1),
     0 8px 8px rgba(0,0,0,0.1),
     0 16px 16px rgba(0,0,0,0.1);
-    /* ������� */
+    /* 溢出隐藏 */
     overflow: hidden;
 }
 .card::before{
@@ -151,35 +151,35 @@ a {
     /* background-image: url(/images/139/1.jpg); */
     background-size: cover;
     background-position: 0 0;
-    /* ����Ч��: css������ ʱ�� ���������� */
+    /* 过渡效果: css属性名 时长 贝塞尔曲线 */
     transition: transform 1s cubic-bezier(0.19,1,0.22,1);
 }
-/* �ֱ�����ͼƬ */
+/* 分别设置图片 */
 .card:nth-child(1)::before{
-	background-image:url(images/jingdian/���﹵1.jpg);
+	background-image:url(images/jingdian/八里沟1.jpg);
 }
 .card:nth-child(2)::before{
-	background-image:url(images/jingdian/����ɽ1.jpg);
+	background-image:url(images/jingdian/万仙山1.jpg);
 }
 .card:nth-child(3)::before{
-	background-image:url(images/jingdian/����԰.jpg);
+	background-image:url(images/jingdian/京华园.jpg);
 }
 .card:nth-child(4)::before{
-    background-image:url(images/jingdian/���ϱ�Ȫ���ζȼ���.jpg);
+    background-image:url(images/jingdian/河南宝泉旅游度假区.jpg);
 }
 .card:nth-child(5)::before{
-    background-image:url(images/jingdian/º����.jpg);
+    background-image:url(images/jingdian/潞王陵.jpg);
 }
 .card:nth-child(6)::before{
-    background-image:url(images/jingdian/����ɽ.jpg);
+    background-image:url(images/jingdian/九莲山.jpg);
 }
 .card:nth-child(7)::before{
-    background-image:url(images/jingdian/�ζ�ɽ1.jpg);
+    background-image:url(images/jingdian/轿顶山1.jpg);
 }
 .card:nth-child(8)::before{
-    background-image:url(images/jingdian/�ȸ���.jpg);
+    background-image:url(images/jingdian/比干庙.jpg);
 }
-/* ���� */
+/* 遮罩 */
 .card::after{
     content: "";
     display: block;
@@ -189,12 +189,12 @@ a {
     rgba(0,0,0,0) 0%,
     rgba(0,0,0,0.25) 55%,
     rgba(0,0,0,0.8) 100%);
-    /* ���Զ�λ */
+    /* 绝对定位 */
     position: absolute;
     left: 0;
     top: 0;
     transform: translateY(0);
-    /* ����Ч�� */
+    /* 过渡效果 */
     transition: transform 1.4s cubic-bezier(0.19,1,0.22,1);
 }
 .card .content{
@@ -214,12 +214,12 @@ a {
 }
 .card p{
     font-size: 15px;
-    /* �ּ�� */
+    /* 字间距 */
     letter-spacing: 1px;
     width: 80%;
     line-height: 30px;
     margin-top: 25px;
-    /* �ı����˶��� */
+    /* 文本两端对齐 */
     text-align: justify;
 }
 .card button{
@@ -236,7 +236,7 @@ a {
     background-color: #000;
 }
 .card .content *:not(h2){
-    /* .content�£�����h2������Ԫ�����ز�����20px */
+    /* .content下，除了h2，其他元素隐藏并下移20px */
     opacity: 0;
     transform: translateY(20px);
     transition: transform 0.7s cubic-bezier(0.19,1,0.22,1),opacity 0.7s cubic-bezier(0.19,1,0.22,1);
@@ -256,12 +256,12 @@ a {
 .card:hover .content *:not(h2){
     opacity: 1;
     transform: translateY(0);
-    /* ����Ч���ӳ� */
+    /* 过渡效果延迟 */
     transition-delay: 0.1s;
 }
 .STYLE7 {
 	color: #000000;
-	font-family: "���Ŀ���";
+	font-family: "华文楷体";
 	font-size: large;
 	font-weight: bold;
 }
@@ -303,48 +303,48 @@ function MM_swapImage() { //v3.0
 </script>
 </head>
 
-<body onload="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide');MM_preloadImages('images/top.png','images/��ɫ��ʳ.png','images/��ɫ����.png','images/����.png','images/��ʷ�Ļ�.png')">
+<body onload="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide');MM_preloadImages('images/top.png','images/特色美食.png','images/特色景点.png','images/人物.png','images/历史文化.png')">
 <div id="Layer6">
   <table width="1220" height="300" border="0" align="left" cellpadding="0" cellspacing="0" bordercolor="#CC6600" bgcolor="#CC3300">
   <tr>
-    <td width="244" height="250" colspan="5"><div align="center"><img src="images/��ɫ����.png" width="1220" height="250" hspace="0" vspace="0" border="0" id="Image1" /></div></td>
+    <td width="244" height="250" colspan="5"><div align="center"><img src="images/特色景点.png" width="1220" height="250" hspace="0" vspace="0" border="0" id="Image1" /></div></td>
   </tr>
   <tr align="center" valign="middle">
     <td align="center" valign="middle" bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','show','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')">
-	<span class="STYLE1">��վ��ҳ</span>
+	<span class="STYLE1">网站首页</span>
     <div id="Layer1" onmouseover="MM_swapImage('Image1','','images/top.png',1)" onmouseout="MM_swapImgRestore()">
       <table width="244" height="50" border="0">
         <tr>
-          <td align="center" valign="middle" class="STYLE6"><a href="index.html" class="STYLE6">��վ��ҳ</a></td>
+          <td align="center" valign="middle" class="STYLE6"><a href="index.html" class="STYLE6">网站首页</a></td>
         </tr>
       </table>
     </div></td>
-    <td bgcolor="#00CCFF" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','show','Layer3','','hide','Layer4','','hide','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">��ɫ����</span>
-    <div id="Layer2" onmouseover="MM_swapImage('Image1','','images/��ɫ����.png',1)" onmouseout="MM_swapImgRestore()">
+    <td bgcolor="#00CCFF" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','show','Layer3','','hide','Layer4','','hide','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">特色景点</span>
+    <div id="Layer2" onmouseover="MM_swapImage('Image1','','images/特色景点.png',1)" onmouseout="MM_swapImgRestore()">
       <table width="244" height="50" border="0">
         <tr>
-           <td align="center" valign="middle" class="STYLE8"><a href="scenic spot.html">��ɫ����</a></td>
+           <td align="center" valign="middle" class="STYLE8"><a href="scenic spot.html">特色景点</a></td>
         </tr>
       </table>
     </div></td>
-    <td bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','show','Layer4','','hide','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">��ɫ��ʳ</span><div id="Layer3" onmouseover="MM_swapImage('Image1','','images/��ɫ��ʳ.png',1)" onmouseout="MM_swapImgRestore()">
+    <td bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','show','Layer4','','hide','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">特色美食</span><div id="Layer3" onmouseover="MM_swapImage('Image1','','images/特色美食.png',1)" onmouseout="MM_swapImgRestore()">
 	<table width="244" height="50" border="0">
         <tr>
-           <td align="center" valign="middle" class="STYLE8"><a href="food.html">��ɫ��ʳ</a></td>
+           <td align="center" valign="middle" class="STYLE8"><a href="food.html">特色美食</a></td>
         </tr>
       </table>
 	  </div></td>
-    <td bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','show','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">��������</span><div id="Layer4" onmouseover="MM_swapImage('Image1','','images/����.png',1)" onmouseout="MM_swapImgRestore()">
+    <td bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','show','Layer5','','hide')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">著名人物</span><div id="Layer4" onmouseover="MM_swapImage('Image1','','images/人物.png',1)" onmouseout="MM_swapImgRestore()">
 	<table width="244" height="50" border="0">
         <tr>
-           <td align="center" valign="middle" class="STYLE8"><a href="character.html">��������</a></td>
+           <td align="center" valign="middle" class="STYLE8"><a href="character.html">著名人物</a></td>
         </tr>
       </table>
 	  </div></td>
-    <td bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','show')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">��ʷ�Ļ�</span>      <div id="Layer5" onmouseover="MM_swapImage('Image1','','images/��ʷ�Ļ�.png',1)" onmouseout="MM_swapImgRestore()">
+    <td bgcolor="#C24F0A" onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','show')" onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer3','','hide','Layer4','','hide','Layer5','','hide')"><span class="STYLE1">历史文化</span>      <div id="Layer5" onmouseover="MM_swapImage('Image1','','images/历史文化.png',1)" onmouseout="MM_swapImgRestore()">
 	<table width="244" height="50" border="0">
         <tr>
-           <td align="center" valign="middle" class="STYLE8"><a href="culture.html">��ʷ�Ļ�</a></td>
+           <td align="center" valign="middle" class="STYLE8"><a href="culture.html">历史文化</a></td>
         </tr>
       </table>
 	  </div></td>
@@ -355,74 +355,74 @@ function MM_swapImage() { //v3.0
    <div class="container">
      <div class="card">
         <div class="content">
-            <h2>���﹵</h2>
-			<p>����ʡ�����а��﹵�����ųơ�̫��֮�ꡢ�л���ǡ�����԰��ר����Ϊ������һ������ 
-        2019��12��31�գ����﹵�������Ļ������β��϶�Ϊ5A��������</p>
-			<a href="scenic spot/���﹵.html">
-			<button>�鿴����</button>
+            <h2>八里沟</h2>
+			<p>河南省新乡市八里沟景区号称“太行之魂、中华风骨”，被园林专家誉为“亚洲一绝”。 
+        2019年12月31日，八里沟景区被文化和旅游部认定为5A级景区。</p>
+			<a href="scenic spot/八里沟.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>����ɽ</h2>
-			<p>����ɽ�羰��ʤ���ǹ���AAAA�����ξ��������ҵ��ʹ�԰�����Ҽ���
-        �ҹ�԰��������Ӱ�ӻ��ء�д�����ء���չ���ء�������ء�</p>
-			<a href="scenic spot/����ɽ.html">
-			<button>�鿴����</button>
+            <h2>万仙山</h2>
+			<p>万仙山风景名胜区是国家AAAA级旅游景区，国家地质公园，国家级攀
+        岩公园，著名的影视基地、写生基地、拓展基地、避暑基地。</p>
+			<a href="scenic spot/万仙山.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>����԰</h2>
-			<p>����԰���ξ���������ȫ��С�������Ե��򣺺���ʡ����������
-        ��С����ʼ����1992��4�£���ռ�����300Ķ���ǹ���AAAA������</p>
-			<a href="scenic spot/����԰.html">
-			<button>�鿴����</button>
+            <h2>京华园</h2>
+			<p>京华园旅游景区坐落在全国小城镇建设试点镇：河南省新乡市新乡
+        县小冀镇，始建于1992年4月，总占地面积300亩，是国家AAAA级景区</p>
+			<a href="scenic spot/京华园.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>��Ȫ�ȼ���</h2>
-			<p>���ϱ�Ȫ���ζȼ���λ����������о��ڣ������110��ƽ�����
-        �ǹ���ɭ�ֱ�������̫��⨺ﱣ������������������С��ȼ١���ˮ�ͱ���ʤ�ء�</p>
-			<a href="scenic spot/��Ȫ.html">
-			<button>�鿴����</button>
+            <h2>宝泉度假区</h2>
+			<p>河南宝泉旅游度假区位于新乡辉县市境内，总面积110余平方公里，
+        是国家森林保护区和太行猕猴保护区。是最理想的休闲、度假、亲水和避暑胜地。</p>
+			<a href="scenic spot/宝泉.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>º����</h2>
-			<p>º���꾰�������ں���ʡ�����з�Ȫ�����ɽ�µ�º���꣬���ҹ�������á�
-        ռ�������������������Ĺ��Ҳ�ǵ�����ȫ���ص����ﱣ����λ��</p>
-			<a href="scenic spot/º����.html">
-			<button>�鿴����</button>
+            <h2>潞王陵</h2>
+			<p>潞王陵景区坐落于河南省新乡市凤泉区凤凰山下的潞王陵，是我国保存最好、
+        占地面积最大的明代藩王陵墓，也是第四批全国重点文物保护单位。</p>
+			<a href="scenic spot/潞王陵.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>����ɽ</h2>
-			<p>̫�о���ɽ����λ�ڻ������ϰ���������ƺ�壬��̫��ɽ������һ�Ρ�����̫�С�
-        ̫�о���ɽ�������оŷ�����������������������</p>
-			<a href="scenic spot/����ɽ.html">
-			<button>�鿴����</button>
+            <h2>九莲山</h2>
+			<p>太行九莲山景区位于辉县市上八里镇松树坪村，属太行山最美的一段——南太行。
+        太行九莲山景区因有九峰相连，酷似莲花而得名。</p>
+			<a href="scenic spot/九莲山.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>�ζ�ɽ</h2>
-			<p>����һ��Ⱥɽ������Ͽ�����ɡ����Ҿ��ڵ��ƺ�ʥ��������һ���������ޡ���ɽ
-        �δ䡢��ɽ���յ�����ʤ�أ�����һ��ֻ��1%�����δ��˲�֪���ľ���������</p>
-			<a href="scenic spot/�ζ�ɽ.html">
-			<button>�鿴����</button>
+            <h2>轿顶山</h2>
+			<p>这是一处群山环抱、峡谷万丈、红岩绝壁的云海圣境！这是一个如仙如兽、青山
+        滴翠、秀山蔽日的休闲胜地！这是一个只有1%的旅游达人才知道的绝美景区！</p>
+			<a href="scenic spot/轿顶山.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
      <div class="card">
         <div class="content">
-            <h2>�ȸ���</h2>
-			<p>�ȸ�����λ�ں���ʡ�����������бȸɴ�ȸɴ�����ˣ�ռ��400��Ķ�������й�
-        ��һ������ʽĹ�ᡪ���ȸ�ĹΪ������������Ĺ��һ����Ⱥ.</p>
-			<a href="scenic spot/�ȸ���.html">
-			<button>�鿴����</button>
+            <h2>比干庙</h2>
+			<p>比干庙，位于河南省新乡市卫辉市比干村比干大道北端，占地400余亩，是以中国
+        第一座坟丘式墓葬——比干墓为基础建立的庙墓合一建筑群.</p>
+			<a href="scenic spot/比干庙.html">
+			<button>查看更多</button>
 			</a></div>
      </div>
  </div>
